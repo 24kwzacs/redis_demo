@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zaw.redisdemo.generator.mapper.OrderDetailsMapper">
+
+    <resultMap id="BaseResultMap" type="com.zaw.redisdemo.ordertest.entity.OrderDetails">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="order_id" column="order_id" jdbcType="INTEGER"/>
+            <result property="product_id" column="product_id" jdbcType="INTEGER"/>
+            <result property="quantity" column="quantity" jdbcType="INTEGER"/>
+            <result property="price_at_purchase" column="price_at_purchase" jdbcType="DECIMAL"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,order_id,product_id,
+        quantity,price_at_purchase
+    </sql>
+</mapper>
